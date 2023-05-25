@@ -1,10 +1,10 @@
 import java.io.Serializable;
 
-public class Credantials implements Serializable {
+public class Credentials implements Serializable {
     String login;
     String password;
 
-    Credantials(String login, String password){
+    Credentials(String login, String password) {
         this.login = login;
         this.password = password;
     }

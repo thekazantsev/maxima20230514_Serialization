@@ -1,25 +1,21 @@
-import java.io.Serializable;
 import java.util.ArrayList;
 
 public class Student extends Person {
     String course;
     int fee;
-
-    Credantials creds;
+    Credentials creds;
 
     static String company = "Maxima"; // it won't be serialized
 
-    ArrayList<String> grades;
+    ArrayList<String> grades = new ArrayList<>();
 
-    public Student(int id, String name, String course, int fee, Credantials creds) {
+    public Student(int id, String name, String course, int fee, Credentials creds) {
         super(id,name);
 
         this.course = course;
         this.fee = fee;
-
         this.creds = creds;
 
-        this.grades = new ArrayList<String>();
         this.grades.add("5");
         this.grades.add("5");
         this.grades.add("5");
