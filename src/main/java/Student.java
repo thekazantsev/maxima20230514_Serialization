@@ -5,7 +5,7 @@ public class Student extends Person {
     int fee;
     Credentials creds;
 
-    static String company = "Maxima"; // it won't be serialized
+    static String company = "Maxima"; // it doesn't be serialized
 
     ArrayList<String> grades = new ArrayList<>();
 
