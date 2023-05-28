@@ -1,8 +1,8 @@
 import java.io.Serializable;
 
 public class Person implements Serializable {
-    int id;
-    String name;
+    public int id;
+    public String name;
 
     public Person(int id, String name) {
         this.id = id;
