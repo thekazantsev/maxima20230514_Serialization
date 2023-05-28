@@ -1,13 +1,13 @@
 import java.util.ArrayList;
 
 public class Student extends Person {
-    String course;
-    int fee;
-    Credentials creds;
+    public final String course;
+    public final int fee;
+    public final Credentials creds;
 
-    static String company = "Maxima"; // it doesn't be serialized
+    private static String company = "Maxima"; // it doesn't be serialized
 
-    ArrayList<String> grades = new ArrayList<>();
+    public ArrayList<String> grades = new ArrayList<>();
 
     public Student(int id, String name, String course, int fee, Credentials creds) {
         super(id,name);

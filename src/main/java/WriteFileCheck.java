@@ -1,7 +1,6 @@
 import java.io.*;
 
 public class WriteFileCheck {
-
     public static void main(String[] args) {
         String text = "Hello world!"; // строка для записи
 

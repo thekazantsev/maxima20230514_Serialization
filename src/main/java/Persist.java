@@ -3,7 +3,7 @@ import java.io.*;
 public class Persist {
     public static void main(String args[]) {
 
-        Credentials creds = new Credentials("login", "password");
+        Credentials creds = new Credentials("l0gin", "pa55word");
         Student theStudent = new Student(1,"Kazantsev", "Java QA Automation", 0, creds);
         Student theStudentFromFile;
         String fileName = "student.txt";
@@ -20,7 +20,7 @@ public class Persist {
         try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(fileName))) {
             theStudentFromFile = (Student)in.readObject();
             System.out.println(theStudentFromFile.id + " " + theStudentFromFile.name + " " + theStudentFromFile.course + " " + theStudentFromFile.fee);
-            System.out.println(theStudentFromFile.creds.login + " " + theStudentFromFile.creds.password);
+            System.out.println(theStudentFromFile.creds.getLogin() + " " + theStudentFromFile.creds.getPassword());
             for (String grade: theStudentFromFile.grades) {
                 System.out.println(grade);
             }
